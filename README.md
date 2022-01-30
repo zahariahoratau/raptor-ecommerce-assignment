@@ -1,6 +1,6 @@
 # Ecommerce solution for order processing 🚚
 
-## About
+### About
 This repository contains code to solve and test a proposed solution for the Ecommerce solution for **Raptor Services**.
 The main focus of the app is that whenever an order is sent through a message queue, the backend system would apply a discount specific to the customer that places the order, and then persist that order.
 

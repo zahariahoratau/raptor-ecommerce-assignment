@@ -4,13 +4,20 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>b460d616-58cd-4c72-b022-9a5514aa2223</UserSecretsId>
+    <UserSecretsId>641ab716-6366-4c36-9e28-f2b7edf0dc95</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EcommerceCompany.Application\EcommerceCompany.Application.csproj" />
+    <ProjectReference Include="..\EcommerceCompany.Infrastructure\EcommerceCompany.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
